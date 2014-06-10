@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>	
+	<link rel="stylesheet" type="text/css" href="jchartfx_css/jChartFX_Palettes/rainy-day.css" />	
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+   	<script type="text/javascript" src="js/jchartfx.system.js"></script>
+   	<script type="text/javascript" src="js/jchartfx.coreBasic.js"></script> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 	 
+	<script type="text/javascript">
+		$(init);
+		function init () {
+			// body...				
+			$('#makeMeDraggable').draggable({							 						
+				start: function(event, ui) { 					
+					alert(event.target.id)},				
+				cursor: 'move',
+				revert:true,								
+			});
+			$('#makeMeDroppable').droppable( {								
+				drop:handleDropEvent,				
+			});
+		}	
+
+		function handleDropEvent(event,ui){
+			// var draggable=ui.draggable;			
+			// window.location="jqa.html"; 			
+			$("p").text("Hello world!");//changes text in the drop box
+			show();			
+		}
+		//chart creation starts
+		var chart1;
+	function show()
+	{
+		console.log("in function");		
+		chart1 = new cfx.Chart();
+		chart1.getData().setSeries(2);
+		chart1.getAxisY().setMin(100);
+		chart1.getAxisY().setMax(500);
+		var Series1 = chart1.getSeries().getItem(0);
+		var Series2 = chart1.getSeries().getItem(1);
+		Series1.setGallery(cfx.Gallery.Lines);
+		Series2.setGallery(cfx.Gallery.Bar);
+		var data=[
+			{"month": "jan", "bikes": 300, "car": 200},
+			{"month": "feb", "bikes": 200, "car": 300},
+			{"month": "mar", "bikes": 250,"car":400},
+			{"month": "jun", "bikes": 200,"car":100},
+			{"month": "jul", "bikes": 400,"car":200}
+			];
+		chart1.setDataSource(data);
+		var divholder = document.getElementById("makeMeDroppable");
+		chart1.create(divholder);
+	}
+	// end of chart creation
+
+	</script>
+</head>  
+<body>  	
+  		<div id="makeMeDraggable" class="button special">Drag me!!</div>  	
+  		<!-- <div id="button2" class="button special">button 2</div> -->
+  		<div id="makeMeDroppable" class="cen"> <p align="center" class="font_color">Drop Here</p></div>
+</body>
+</html>

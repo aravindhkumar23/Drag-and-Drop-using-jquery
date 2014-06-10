@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>	
+	<link rel="stylesheet" type="text/css" href="jchartfx_css/jChartFX_Palettes/rainy-day.css" />	
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+   	<script type="text/javascript" src="js/jchartfx.system.js"></script>
+   	<script type="text/javascript" src="js/custom.js"></script>
+   	<script type="text/javascript" src="js/jchartfx.coreBasic.js"></script> 
+    <script type="text/javascript"src="js/jchartfx.animation.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 	 
+	<script type="text/javascript">	
+	// starts drag event	
+	function dragStart(ev) { 
+  		var var_id=ev.target.id;
+  		// alert(var_id);
+  		$('#'+var_id).draggable({
+  			revert:true,	//revert button to original position
+  		});	//ends drag event and drop performed
+  		$('#drop_box').droppable( {								
+				drop:handleDropEvent,  	//calls this function after dropped in box
+		});
+	}	
+	function handleDropEvent(event,ui){
+			var drag_ele=ui.draggable;	
+			var d_id=drag_ele.attr('id');			
+			// window.location="jqa.html"; 			// goes to a new html page 			
+			$('#drop_box').empty();
+			// $("p").text("Hello world!");//changes text in the drop box
+			switch ( d_id ) { 
+    			case "bar":
+        			// alert( "the value was bar -- yay!" );
+        			$("p").text("bar chart!");//changes text in the drop box
+      		  		bar_show();
+        			break; 
+    			case "line":
+        			// alert( "line :(" );
+       				$("p").text("line chart!");//changes text in the drop box
+   		     		line_show();
+        			break;
+    			default:
+    				$("p").text("no such chart!");//changes text in the drop box
+        			alert( "no chart available" ); 
+			}	
+		}	
+	</script>
+</head>  
+<body>  	
+  		<div draggable="true" ondragstart="dragStart(event)" id="bar" class="button special">Bar</div><br>
+  		<div draggable="true" ondragstart="dragStart(event)" id="line" class="button special">Line</div><br>  	  	
+  		<div draggable="true" ondragstart="dragStart(event)" id="pie" class="button special">Pie</div><br>	
+  		 <p align="center" class="font_color">Drop in the box</p>
+  		 <!-- drag box area -->
+  		<div id="drop_box" class="cen"> <p align="center" class="font_color">Drop Here</p></div>
+</body>
+</html>

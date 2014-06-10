@@ -1,0 +1,203 @@
+#divBack
+{
+        position: absolute;
+        width: 111px;
+        height: 60px;
+        left: 5px;
+        top: 13px;
+        text-align: center;
+}
+
+.jchartfx .Title 
+{
+        font-size: 12pt;
+}
+.jchartfx {
+        font-family: Verdana, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+}
+.jchartfx .Attribute0 {
+        fill: #0972A5;
+        stroke: #07567C;
+        stroke-width: 1;
+}
+
+.jchartfx .Attribute0Line {
+        stroke: #07567C;
+        stroke-width: 3;
+}
+
+.jchartfx .Attribute0Alt {
+        fill: #0B8ECE;
+}
+
+.jchartfx .Attribute1 {
+        fill: #EEEEEE;
+        stroke: #B3B3B3;
+        stroke-width: 1;
+}
+
+.jchartfx .Attribute1Line {
+        stroke: #B3B3B3;
+        stroke-width: 3;
+}
+
+.jchartfx .Attribute1Alt {
+        fill: #B3B3B3;
+}
+
+.jchartfx .Attribute2 {
+        fill: #FFC73D;
+        stroke: #C0962E;
+        stroke-width: 1;
+}
+
+.jchartfx .Attribute2Line {
+        stroke: #C0962E;
+        stroke-width: 3;
+}
+
+.jchartfx .Attribute2Alt {
+        fill: #C0962E;
+}
+
+.jchartfx .Attribute3 {
+        fill: #CCCCCC;
+        stroke: #999999;
+        stroke-width: 1;
+}
+
+.jchartfx .Attribute3Line {
+        stroke: #999999;
+        stroke-width: 3;
+}
+
+.jchartfx .Attribute3Alt {
+        fill: #999999;
+}
+
+.jchartfx .Attribute4 {
+        fill: #555555;
+        stroke: #404040;
+        stroke-width: 1;
+}
+
+.jchartfx .Attribute4Line {
+        stroke: #404040;
+        stroke-width: 3;
+}
+
+.jchartfx .Attribute4Alt {
+        fill: #6A6A6A;
+}
+
+.jchartfx .Attribute5 {
+        fill: #2E7DB2;
+        stroke: #235E86;
+        stroke-width: 1;
+}
+
+.jchartfx .Attribute5Line {
+        stroke: #235E86;
+        stroke-width: 3;
+}
+
+.jchartfx .Attribute5Alt {
+        fill: #399CDE;
+}
+
+.jchartfx .Attribute6 {
+        fill: #0B93D5;
+        stroke: #096FA0;
+        stroke-width: 1;
+}
+
+.jchartfx .Attribute6Line {
+        stroke: #096FA0;
+        stroke-width: 3;
+}
+
+.jchartfx .Attribute6Alt {
+        fill: #0DB7FF;
+}
+
+.jchartfx .Border {
+        fill: #000000;
+        stroke: #555555;
+        stroke-width: 1;
+}
+
+.jchartfx .PlotArea {
+        fill: transparent;
+        stroke: #444444;
+        stroke-width: 1;
+}
+.jchartfx .AxisY_Text {
+        fill: #FFFFFF;
+}
+
+.jchartfx .AxisY_Major {
+        stroke: #444444;
+}
+
+.jchartfx .AxisY_Minor {
+        stroke: #444444;
+}
+
+.jchartfx .AxisY_Interlaced {
+        fill: #000000;
+}
+
+.jchartfx .AxisY_Line {
+        stroke: #444444;
+        stroke-width: 2;
+}
+
+.jchartfx .AxisX_Text {
+        fill: #FFFFFF;
+}
+
+.jchartfx .AxisX_Major {
+        stroke: #444444;
+}
+
+.jchartfx .AxisX_Minor {
+        stroke: #444444;
+}
+
+.jchartfx .AxisX_Interlaced {
+        fill: #000000;
+}
+
+.jchartfx .AxisX_Line {
+        stroke: #444444;
+        stroke-width: 2;
+}
+
+.jchartfx .PointLabel {
+        fill: #000;
+}
+
+.jchartfx .PointLabelBorder {
+        fill: #C0C0C0;
+        stroke: #FFFFFF;
+}
+
+.jchartfx .Title {
+        fill: #FFFFFF;
+}
+
+.jchartfx .LegendBox {
+        fill: transparent;
+        stroke: #555555;
+        stroke-width: 1;
+}
+
+.jchartfx .LegendItem {
+        fill: #FFFFFF;
+}
+
+
+
+
